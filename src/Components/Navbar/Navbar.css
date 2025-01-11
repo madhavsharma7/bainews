@@ -1,4 +1,7 @@
 /* Main navbar container */
+body{
+    background-color: #FFFEFE;
+}
 #main {
     width: 100%;
     background-color: #161616;
@@ -71,17 +74,27 @@
 }
 
 .navbar-link{
-    color: white;
+    color: #FFFEFE;
     text-decoration: none;
     font-size: 3vh;
 }
 
-.home{
-    color: white;
-    font-size: 3vh;
-    text-decoration: none;
+.home {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center icon and text */
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Text color */
+    margin: 10px; /* Add spacing around */
 }
 
-.icon{
-    margin-right: 1vw;
+.homeicon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    margin-right: 1.5vw; /* Add space between icon and text */
+}
+
+.hometext {
+    color: #FFFEFE;
+    font-size: 3vh; 
+    
 }

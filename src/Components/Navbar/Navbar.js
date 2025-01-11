@@ -54,8 +54,8 @@ const Nav = () => {
                     ) : (
                         <ul className="navbar-menu">
                             <a href="#" className="home">
-                                <img src={homeImg} />
-                                होम
+                                <img className="homeicon" src={homeImg}/>
+                               <p className="hometext">होम</p> 
                             </a>
 
                             {categories.map((category) => (
