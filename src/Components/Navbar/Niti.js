@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./Niti.css";
 import homeImg from "../../icon/house.webp"
 
 const Nav = () => {
@@ -90,9 +90,20 @@ const Nav = () => {
                         नियम एवं शर्तें
                     </a>
                 </div>
+                
             </div>
+            <div className="Content"> 
+                
+            </div>
+    
         </div>
+
+    
     );
+  
+
 };
+
+
 
 export default Nav;

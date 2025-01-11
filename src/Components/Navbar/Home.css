@@ -1,0 +1,99 @@
+/* Main navbar container */
+body{
+    background-color: #FFFEFE;
+}
+#main {
+    width: 100%;
+    background-color: #161616;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+/* Logo styling */
+.logo img{
+
+    width: 20vh;
+
+    padding-left: 20%;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+
+/* Categories section */
+.categories {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Right section links */
+.right-section {
+    text-align: right;
+    margin-right: 2vw;
+}
+
+.right-link {
+    color: #7b7b7b;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.separator {
+    margin: 0 0.5rem;
+    color: #7b7b7b;
+}
+
+.navbar-link{
+    color: #FFFEFE;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.home {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center icon and text */
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Text color */
+    margin: 10px; /* Add spacing around */
+}
+
+.homeicon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    margin-right: 1.5vw; /* Add space between icon and text */
+}
+
+.hometext {
+    color: #FFFEFE;
+    font-size: 3vh;   
+}
