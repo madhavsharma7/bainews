@@ -107,12 +107,22 @@ useEffect(() => {
 
                                     <li key="6721db546ab618a2a465961d" className="navbar-item">
                                         <span className="category-icon">
-                                            <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurg.7316a2a4.png&w=32&q=75" />
+                                            <img  src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhilai.79ee4325.png&w=32&q=75" />
                                         </span>
                                         <a href={`#chhattisgarh-9637/durg`} className="navbar-link">
-                                        दुर्ग
+                                        भिलाई
                                         </a>
                                     </li>
+
+                                    <li key="6721db546ab618a2a465961d" className="navbar-item">
+                                        <span className="category-icon">
+                                            <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fraipur.2c2fca26.png&w=32&q=75" />
+                                        </span>
+                                        <a href={`#chhattisgarh-9637/durg`} className="navbar-link">
+                                        रायपुर
+                                        </a>
+                                    </li>
+
                             </ul>
                         )}
                     </div>
@@ -130,7 +140,7 @@ useEffect(() => {
                 </div>
             </div>
             <div id="main-body">
-                <div>
+                <div >
                     <h3>Trending News</h3>
                 {error && <p>Error: {error}</p>}
                 {trendingNews.length > 0 ? (
@@ -139,7 +149,7 @@ useEffect(() => {
                                 <div className="card-image-box">
                                     <a href={newsItem.url} target="_blank" rel="noopener noreferrer"><img src={`https://storage.googleapis.com/media.dev.baisahab.com/${newsItem.image.url}`} /></a>
                                 </div>
-                                <div>
+                                <div className="card-title">
                                     <a href={newsItem.url} ><h1 className="cart-title">{newsItem.title}</h1></a>
                                 </div>
                             </div>
@@ -150,7 +160,7 @@ useEffect(() => {
                 </div>
                 </div>
                 <div>
-                    <h1>taja khabar</h1>
+                   
                 </div>
             </div>
             
