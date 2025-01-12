@@ -1,46 +1,40 @@
-/* Main navbar container */
-body{
-    background-color: #FFFEFE;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-#main {
-    width: 100%;
-    background-color: #161616;
 
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 11vh;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    overflow: hidden;
 }
 
-/* Navbar styling */
+/* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #161616;
     width: 100%;
-
+    z-index: 10;
+    height: 11vh;
 }
 
-/* Logo styling */
-.logo img{
-
+/* Logo Styling */
+.logo img {
     width: 20vh;
-
-    padding-left: 20%;
+    /* Adjust width to maintain balance */
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    /* Ensure spacing from the left edge */
 }
 
-.logo-image {
-    height: 40px;
-    width: auto;
-}
-
-/* Categories section */
+/* Categories Section */
 .categories {
-    flex: 3;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    /* Ensures the section expands properly */
 }
 
 .navbar-menu {
@@ -51,49 +45,134 @@ body{
 }
 
 .navbar-item {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
+    /* Add spacing between items */
     display: flex;
     align-items: center;
 }
 
-/* Right section links */
+.navbar-link {
+    color: #FFFEFE;
+    /* Light text color for contrast */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 2.8vh;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Vertically center icon and text */
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: white;
+    /* Text color */
+    margin: 10px;
+    /* Add spacing around */
+}
+
+.homeicon {
+    width: 24px;
+    /* Icon size */
+    height: 24px;
+    margin-right: 1.5vw;
+    /* Space between icon and text */
+}
+
+.hometext {
+    color: #FFFEFE;
+    font-size: 2.8vh;
+}
+
+/* Right Section Links */
 .right-section {
     text-align: right;
-    margin-right: 2vw;
+    margin-right: 3vw;
+    margin-top: 3.8vh;
 }
 
 .right-link {
     color: #7b7b7b;
     text-decoration: none;
     font-size: 1.3vw;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
+
 
 .separator {
     margin: 0 0.5rem;
     color: #7b7b7b;
 }
 
-.navbar-link{
-    color: #FFFEFE;
+/* Sidebar - Latest News Section */
+.Latestnews {
+    padding-top: 5vh;
+    padding-left: 2vw;
+    text-align: left;
+}
+
+.Latestnews h4 {
+    margin: 0;
+    font-size: 1.5vw;
+    color: #010001;
+
+}
+
+
+.Latestnews {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content {
+    padding: 10px;
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
     text-decoration: none;
-    font-size: 3vh;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.home {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center icon and text */
-    text-decoration: none; /* Remove underline from the link */
-    color: white; /* Text color */
-    margin: 10px; /* Add spacing around */
+.news-title:hover {
+    color: #007bff;
 }
 
-.homeicon {
-    width: 24px; /* Adjust icon size */
-    height: 24px;
-    margin-right: 1.5vw; /* Add space between icon and text */
-}
-
-.hometext {
-    color: #FFFEFE;
-    font-size: 3vh;   
+.news-source {
+    font-size: 12px;
+    color: #777;
 }
