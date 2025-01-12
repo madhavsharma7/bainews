@@ -3,22 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    
+    padding-top: 11vh;
 }
 
 /* Navbar Styling */
+
 .navbar {
     display: flex;
     background-color: #161616;
     width: 100%;
     z-index: 10;
     height: 11vh;
+    /* Fixed height */
+    position: fixed;
+    top: 0;
+    /* Ensure the navbar stays at the top of the viewport */
+    left: 0;
+    /* Align the navbar to the left edge */
 }
 
 /* Logo Styling */
@@ -38,14 +45,15 @@
     /* Ensures the section expands properly */
 }
 
-.category-icon img{
+.category-icon img {
     padding: 1.5vw;
     height: 10vh;
 }
 
-.category-icon img{
+.category-icon img {
     cursor: pointer;
 }
+
 .navbar-menu {
     display: flex;
     list-style-type: none;
@@ -71,23 +79,16 @@
 /* Home Section */
 .home {
     display: flex;
-    /* Use flexbox for alignment */
     align-items: center;
-    /* Vertically center icon and text */
     text-decoration: none;
-    /* Remove underline from the link */
     color: white;
-    /* Text color */
     margin: 10px;
-    /* Add spacing around */
 }
 
 .homeicon {
     width: 24px;
-    /* Icon size */
     height: 24px;
     margin-right: 1.5vw;
-    /* Space between icon and text */
 }
 
 .hometext {
@@ -107,7 +108,7 @@
     text-decoration: none;
     font-size: 1.3vw;
     transition: color 0.3s ease;
-    /* Smooth transition for hover effect */
+    
 }
 
 .separator {
@@ -126,7 +127,7 @@
 .Latestnews h4 {
     margin: 0;
     font-size: 1.5vw;
-    color: #010001;   
+    color: #010001;
 }
 
 .Latestnews {
@@ -134,47 +135,90 @@
     background-color: #f9f9f9;
 }
 
-#main-body{
+#main-body {
     display: flex;
     width: 100vw;
     margin-left: 2vw;
-    margin-top: 2vh;
+    margin-top: 13vh;
 }
 
-#main-body div:nth-child(1)
-{
+#main-body div:nth-child(1) {
     text-align: justify;
     font-size: 1.1vw;
     margin-top: 2vh;
-    width: 24%; 
+    width: 24%;
 }
 
-#main-body div:nth-child(2)
-{
+#main-body div:nth-child(2) {
     width: 70%;
 }
 
 #main-body div .card {
     display: flex;
-    /* border: 2px solid green; */
+   
     width: 120%;
     margin: 0.4vw;
     font-size: 1em;
 }
 
-#main-body div:nth-child(1) .card img{
+#main-body div:nth-child(1) .card img {
     width: 100%;
     border-radius: 6px;
     height: 12vh;
-
 }
-#main-body div .cart-title{
+
+#main-body div .cart-title {
     font-size: 1.1vw;
     font-weight: 600;
     width: 60%;
     margin-top: 1vw;
     margin-left: 1.2vw;
-
 }
 
+/* link photo  */
 
+.photo {
+    height: 60vh;
+}
+
+.linkphoto {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    overflow-y: hidden;
+}
+
+.linkphoto img {
+    display: block;
+    position: absolute;
+    width: 90%;
+    margin-left: 2.5vw;
+    border-radius: 4%;
+    margin-top: 3vh;
+}
+
+.linkphoto img:first-child {
+    position: relative;
+    
+}
+
+.linkphoto .android {
+    z-index: 1;
+    position: absolute;
+    top: -14.2vh;
+    left: 0.8vw;
+    height: 4.3vh;
+    width: 28%;
+    margin-left: 5.5vw;
+    cursor: pointer;
+}
+
+.linkphoto .ios {
+    z-index: 1;
+    position: absolute;
+    top: -21.5vh;
+    left: 11vw;
+    height: 4.3vh;
+    width: 28%;
+    cursor: pointer;
+}
