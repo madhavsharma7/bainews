@@ -20,21 +20,18 @@
     width: 100%;
     z-index: 10;
     height: 11vh;
-    /* Fixed height */
     position: fixed;
     top: 0;
-    /* Ensure the navbar stays at the top of the viewport */
     left: 0;
-    /* Align the navbar to the left edge */
+
 }
 
 /* Logo Styling */
 .logo img {
     width: 20vh;
-    /* Adjust width to maintain balance */
     margin-top: 2.5vh;
     margin-left: 2vw;
-    /* Ensure spacing from the left edge */
+
 }
 
 /* Categories Section */
@@ -42,7 +39,6 @@
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    /* Ensures the section expands properly */
 }
 
 .category-icon img {
@@ -68,12 +64,10 @@
 
 .navbar-link {
     color: #FFFEFE;
-    /* Light text color for contrast */
     text-decoration: none;
-    /* Remove underline */
     font-size: 2.8vh;
     transition: color 0.3s ease;
-    /* Smooth transition for hover effect */
+
 }
 
 /* Home Section */
@@ -108,7 +102,7 @@
     text-decoration: none;
     font-size: 1.3vw;
     transition: color 0.3s ease;
-    
+
 }
 
 .separator {
@@ -118,22 +112,6 @@
 }
 
 /* Sidebar - Latest News Section */
-.Latestnews {
-    padding-top: 5vh;
-    padding-left: 2vw;
-    text-align: left;
-}
-
-.Latestnews h4 {
-    margin: 0;
-    font-size: 1.5vw;
-    color: #010001;
-}
-
-.Latestnews {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
 
 #main-body {
     display: flex;
@@ -142,36 +120,57 @@
     margin-top: 13vh;
 }
 
-#main-body div:nth-child(1) {
+#trending-news-container {
     text-align: justify;
     font-size: 1.1vw;
     margin-top: 2vh;
     width: 24%;
 }
+#trending-news-container h3{
+    margin-bottom: 5%;
+}
 
-#main-body div:nth-child(2) {
+#articles-container {
+    margin-left: 2%;
+    margin-top: 1%;
     width: 70%;
+    background-color: #0000000f;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 #main-body div .card {
     display: flex;
-   
-    width: 120%;
+    width: 30;
     margin: 0.4vw;
     font-size: 1em;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
-#main-body div:nth-child(1) .card img {
+.card-image-box {
+    width: 40%;
+    height: 100%;
+}
+
+#trending-news-container .card img {
     width: 100%;
     border-radius: 6px;
-    height: 12vh;
+    height: 100%;
 }
 
-#main-body div .cart-title {
+.card-body {
+    width: 60%;
+    margin-top: 5%;
+
+}
+
+#main-body div .card-title {
     font-size: 1.1vw;
     font-weight: 600;
-    width: 60%;
-    margin-top: 1vw;
+    width: 85%;
+    margin-bottom: 8%;
     margin-left: 1.2vw;
 }
 
@@ -191,24 +190,22 @@
 .linkphoto img {
     display: block;
     position: absolute;
-    width: 90%;
-    margin-left: 2.5vw;
+    width: 100%;
     border-radius: 4%;
     margin-top: 3vh;
 }
 
 .linkphoto img:first-child {
     position: relative;
-    
 }
 
 .linkphoto .android {
     z-index: 1;
     position: absolute;
     top: -14.2vh;
-    left: 0.8vw;
+    left: -1.7vw;
     height: 4.3vh;
-    width: 28%;
+    width: 31%;
     margin-left: 5.5vw;
     cursor: pointer;
 }
@@ -217,8 +214,46 @@
     z-index: 1;
     position: absolute;
     top: -21.5vh;
-    left: 11vw;
+    left: 11.2vw;
     height: 4.3vh;
-    width: 28%;
+    width: 31%;
     cursor: pointer;
+}
+
+/* News */
+.article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+  
 }
