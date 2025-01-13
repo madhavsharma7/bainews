@@ -4,8 +4,8 @@ import homeImg from "../../icon/house.webp";
 import app from "../../icon/link.png";
 import android from "../../icon/android.webp";
 import ios from "../../icon/ios.webp";
-
-import Niti from "../../Links/home";
+import newsicon from "../../icon/icon news.webp";
+import Niti from "../../Links/Niti";
 
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
@@ -216,6 +216,11 @@ const Nav = () => {
                 </div>
 
                 <div id="articles-container">
+                    <div className="titleicon">
+                        <img src={newsicon}></img>
+                        <h4 className="section-title">ताज़ा खबर</h4>
+                    </div>
+
                     {data.map((article) => (
                         <div key={article.articleId} className="article">
 

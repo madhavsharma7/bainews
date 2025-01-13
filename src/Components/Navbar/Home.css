@@ -113,6 +113,7 @@
 
 /* Sidebar - Latest News Section */
 
+
 #main-body {
     display: flex;
     width: 100vw;
@@ -134,9 +135,10 @@
     margin-left: 2%;
     margin-top: 1%;
     width: 70%;
-    background-color: #0000000f;
+    background-color: #F8F8F8;
     border-radius: 10px;
     padding: 15px;
+    overflow-y: hidden;
 }
 
 #main-body div .card {
@@ -221,6 +223,28 @@
 }
 
 /* News */
+
+.titleicon{
+    display: flex;
+}
+
+.titleicon img{
+    width: 2.5vw;
+    height: 5vh;
+}
+.titleicon h4{
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+    
+
+}
+
+.section-title{
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
 .article {
     width: 100%;
     height: 10%;
