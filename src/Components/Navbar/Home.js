@@ -6,16 +6,17 @@ import android from "../../icon/android.webp";
 import ios from "../../icon/ios.webp";
 import newsicon from "../../icon/icon news.webp";
 import Niti from "../../Links/Niti";
-
+import Cric from "../../icon/cricket.webp";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 const Nav = () => {
-    const [categories, setCategories] = useState([]); // Categories state
-    const [error, setError] = useState(null);
+    const [categories, setCategories] = useState([]);
     const [trendingNews, setTrendingNews] = useState([]);
-
+    const [articles, setArticles] = useState([]);
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
 
 
     // Fetch categories
@@ -82,37 +83,105 @@ const Nav = () => {
     }, []);
 
     // fetching News
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://article.api.dev.baisahab.com/api/homePageWeb', {
-                    method: 'GET',
-                    headers: { 'client-origin': 'BaiSahab' },
-                });
 
-                if (response.ok) {
-                    const responseData = await response.json();
-                    console.log('Fetched Data:', responseData.data.webStories); // Log the data
-                    setData(responseData.data.webStories);
-                    setLoading(false);
-                } else {
-                    const errorData = await response.json();
-                    setError(errorData.messages || 'Failed to fetch data');
-                    setLoading(false);
-                }
-            } catch (err) {
-                // console.error('Error:', err); // Log the error
-                // setError('Something went wrong');
-                // setLoading(false);
+    const fetchData = async () => {
+        try {
+            const response = await fetch('https://article.api.dev.baisahab.com/api/homePageWeb', {
+                method: 'GET',
+                headers: { 'client-origin': 'BaiSahab' },
+            });
+
+            if (response.ok) {
+                const responseData = await response.json();
+                console.log('Fetched Data:', responseData.data.webStories); // Log the data
+                setData(responseData.data.webStories);
+                setLoading(false);
+            } else {
+                const errorData = await response.json();
+                setError(errorData.messages || 'Failed to fetch data');
+                setLoading(false);
             }
-        };
+        } catch (err) {
+            // console.error('Error:', err); // Log the error
+            // setError('Something went wrong');
+            // setLoading(false);
+        }
+    };
 
-        fetchData();
-    }, []);
+    fetchData();
+
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
+    // Cricket 
+
+
+    const fetchDatacricket = async () => {
+        try {
+            const response = await fetch(
+                'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket',
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'client-origin': 'BaiSahab',
+                    },
+                }
+            );
+
+            if (response.ok) {
+                const data = await response.json();
+                setArticles(data.articles || []);
+            } else {
+                const errorData = await response.json();
+                setError(errorData.messages || 'Failed to fetch data');
+            }
+        } catch (err) {
+            setError('Something went wrong while fetching data');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    fetchDatacricket();
+
+    // Bollywood
+
+    const fetchbollywood = async () => {
+        try {
+            console.log('Fetching data from API...');
+            const response = await fetch(
+                'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood',
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'client-origin': 'BaiSahab', // Include headers if required by the API
+                    },
+                }
+            );
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Fetched data:', data);
+                setArticles(data.articles || []); // Update state with fetched data
+                setLoading(false);
+            } else {
+                const errorData = await response.json();
+                console.error('API error:', response.status, response.statusText);
+                console.error('Error details:', errorData);
+                setError(errorData.messages || 'Failed to fetch data');
+                setLoading(false);
+            }
+        } catch (err) {
+            // console.error('Fetch failed:', err.message);
+            // setError('Something went wrong while fetching data');
+            // setLoading(false);
+        }
+    };
+
+    fetchbollywood();
 
     return (
         <div id="main">
@@ -185,8 +254,6 @@ const Nav = () => {
                             {/* Add more routes as needed */}
                         </Routes>
                     </div>
-
-
                 </div>
             </div>
 
@@ -251,18 +318,85 @@ const Nav = () => {
 
             <div>
 
-                {/* Copy here frontend for new api data class articles-container*/}
+                {/* Cricket  */}
+
+                <div id="cricket-articles-container">
+                    <div className="cricket-titleicon">
+                        <img src={Cric} alt="News Icon" />
+                        <h4 className="cricket-section-title"> क्रिकेट </h4>
+                    </div>
+
+                    {articles.map((article) => (
+                        <div key={article.articleId} className="cricket-article">
+                            <div className="cricket-article-image-container">
+                                {article.image?.url && (
+                                    <img
+                                        src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
+                                        alt={article.title || 'Image'}
+                                        className="cricket-article-image"
+                                    />
+                                )}
+                            </div>
+                            <div className="cricket-article-body">
+                                <h3 className="cricket-article-title">{article.title}</h3>
+                                <p className="cricket-article-date">
+                                    {article.publishedDate
+                                        ? new Date(article.publishedDate * 1000).toLocaleDateString('hi-IN', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric',
+                                        })
+                                        : 'Date not available'}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
             </div>
+
+            {/* Bollywood  */}
+            <div id="bollywood-articles-container">
+                <div className="bollywood-titleicon">
+                    <img src={Cric} alt="Bollywood Icon" />
+                    <h4 className="bollywood-section-title">बॉलीवुड</h4>
+                </div>
+
+                {/* Loop through the articles and display each */}
+                {articles.map((article) => (
+                    <div key={article.articleId} className="bollywood-article">
+                        <div className="bollywood-article-image-container">
+                            {article.image?.url && (
+                                <img
+                                    src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
+                                    alt={article.title || "Image"}
+                                    className="bollywood-article-image"
+                                />
+                            )}
+                        </div>
+                        <div className="bollywood-article-body">
+                            <h3 className="bollywood-article-title">{article.title}</h3>
+                            <p className="bollywood-article-date">
+                                {article.publishedDate
+                                    ? new Date(article.publishedDate * 1000).toLocaleDateString("hi-IN", {
+                                        year: "numeric",
+                                        month: "long",
+                                        day: "numeric",
+                                    })
+                                    : "Date not available"}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
         </div>
-
-
-
-
-
 
     );
 };
 
 export default Nav;
+
+
+
 

@@ -127,19 +127,11 @@
     margin-top: 2vh;
     width: 24%;
 }
-#trending-news-container h3{
+
+#trending-news-container h3 {
     margin-bottom: 5%;
 }
 
-#articles-container {
-    margin-left: 2%;
-    margin-top: 1%;
-    width: 70%;
-    background-color: #F8F8F8;
-    border-radius: 10px;
-    padding: 15px;
-    overflow-y: hidden;
-}
 
 #main-body div .card {
     display: flex;
@@ -224,27 +216,39 @@
 
 /* News */
 
-.titleicon{
+.titleicon {
     display: flex;
 }
 
-.titleicon img{
+.titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
-.titleicon h4{
+
+.titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
-    
-
 }
 
-.section-title{
+.section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
+
+#articles-container {
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 70%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+    padding-bottom: 2%;
+}
+
 .article {
     width: 100%;
     height: 10%;
@@ -279,5 +283,147 @@
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
-  
+}
+
+
+/* Cricket  */
+
+.cricket-titleicon {
+    display: flex;
+}
+
+.cricket-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.cricket-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.cricket-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#cricket-articles-container {
+    margin-left: 28.2%;
+    margin-top: 1%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.cricket-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.cricket-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.cricket-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.cricket-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cricket-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cricket-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
+
+
+/* Bollywood */
+
+
+.bollywood-titleicon {
+    display: flex;
+}
+
+.bollywood-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.bollywood-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.bollywood-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#bollywood-articles-container {
+    margin-left: 28.2%;
+    margin-top: 1%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.bollywood-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.bollywood-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.bollywood-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.bollywood-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bollywood-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bollywood-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
 }
