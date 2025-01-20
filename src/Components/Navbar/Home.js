@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import "./Media.css"
 import homeImg from "../../icon/house.webp";
 import app from "../../icon/link.png";
 import android from "../../icon/android.webp";
@@ -162,8 +163,11 @@ const Nav = () => {
         fetchbollywood();
     }, []);
 
+
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
+
+
 
     return (
         <div id="main">
@@ -323,7 +327,7 @@ const Nav = () => {
                             <h3 className="cricket-article-title">{article.title}</h3>
                             <p className="cricket-article-date">
                                 {article.publishedDate
-                                    ? new Date(article.publishedDate * 1000).toLocaleDateString()
+                                    ? new Date(article.publishedDate * 1000).toDateString()
                                     : "Date not available"}
                             </p>
                         </div>
@@ -353,14 +357,98 @@ const Nav = () => {
                             <h3 className="bollywood-article-title">{article.title}</h3>
                             <p className="bollywood-article-date">
                                 {article.publishedDate
-                                    ? new Date(article.publishedDate * 1000).toLocaleDateString()
+                                    ? new Date(article.publishedDate * 1000).toDateString()
                                     : "Date not available"}
                             </p>
                         </div>
                     </div>
                 ))}
             </div>
+
+
+            <div id="footer">
+                <div class="footer-content">
+                    <div className="footer-logo">
+                        <img
+                            src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.79083e93.png&w=256&q=75"
+                            alt="Logo"
+                        />
+                    </div>
+                </div>
+                <div className="right-section-footer">
+                    <div className="grid-container">
+                        <a className="right-link-footer">
+                            गोपनीयता नीति
+                        </a>
+                        <p> हमसे संपर्क करे </p>
+                        <a className="right-link-footer">
+                            नियम एवं शर्तें
+                        </a>
+                        <p className="email"> support@baisahab.com </p>
+                    </div>
+
+                    <p className="application-link"> ऐप डाउनलोड करें </p>
+                </div>
+
+                <div className="link">
+                    <img className="android" src={android} alt="Android App" />
+
+                    <img className="ios" src={ios} alt="iOS App" />
+                </div>
+
+                <hr></hr>
+
+
+                <p className="copyright">2024 Light Speed International Consulting L.L.C-FZ All rights reserved BAISAHAB</p>
+
+            </div>
+            <div id="bottom-navbar">
+                <div id="navbar-second">
+                    <div className="categories-second">
+                        {error ? (
+                            <p className="error-message-second">Error: {error}</p>
+                        ) : (
+                            <ul className="navbar-menu-second">
+                                <a href="होम" className="home-second">
+                                    <img className="homeicon-second" src={homeImg} />
+                                    <p className="hometext-second">होम</p>
+                                </a>
+                                <li key="6721db546ab618a2a465961d" className="navbar-item-second">
+                                    <span className="category-icon-second">
+                                        <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurg.7316a2a4.png&w=32&q=75" />
+                                    </span>
+                                    <a href={`दुर्ग`} className="navbar-link-second">
+                                        दुर्ग
+                                    </a>
+                                </li>
+
+                                <li key="6721db546ab618a2a465961d" className="navbar-item-second">
+                                    <span className="category-icon-second">
+                                        <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhilai.79ee4325.png&w=32&q=75" />
+                                    </span>
+                                    <a href={`भिलाई`} className="navbar-link-second">
+                                        भिलाई
+                                    </a>
+                                </li>
+
+                                <li key="6721db546ab618a2a465961d" className="navbar-link-second">
+                                    <span className="category-icon-second">
+                                        <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fraipur.2c2fca26.png&w=32&q=75" />
+                                    </span>
+                                    <a href={`रायपुर`} className="navbar-link-second">
+                                        रायपुर
+                                    </a>
+                                </li>
+
+                            </ul>
+                        )}
+                    </div>
+                </div>
+            </div>
         </div>
+       
+
+
 
 
     );

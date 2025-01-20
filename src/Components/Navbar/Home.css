@@ -427,3 +427,12 @@
     color: #7b7b7b;
     margin-top: 7vh;
 }
+
+
+#navbar-second{
+    display: none;
+}
+
+#footer{
+    display: none;
+}
