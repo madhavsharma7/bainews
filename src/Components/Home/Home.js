@@ -6,7 +6,7 @@ import app from "../../icon/link.png";
 import android from "../../icon/android.webp";
 import ios from "../../icon/ios.webp";
 import newsicon from "../../icon/icon news.webp";
-import Niti from "../../Links/Niti";
+import Niti from "../Niti/Niti";
 import Cric from "../../icon/cricket.webp";
 import Bolly from "../../icon/bolly.webp"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 const Nav = () => {
     const [cricketArticles, setCricketArticles] = useState([]);
     const [bollywoodArticles, setBollywoodArticles] = useState([]);
+
     const [categories, setCategories] = useState([]);
     const [trendingNews, setTrendingNews] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -383,7 +384,6 @@ const Nav = () => {
                     <p>No bollywood articles available.</p>
                 )}
             </div>
-            
 
             <div id="footer">
                 <div class="footer-content">
@@ -414,13 +414,10 @@ const Nav = () => {
 
                     <img className="ios" src={ios} alt="iOS App" />
                 </div>
-
                 <hr></hr>
-
-
                 <p className="copyright">2024 Light Speed International Consulting L.L.C-FZ All rights reserved BAISAHAB</p>
-
             </div>
+
             <div id="bottom-navbar">
                 <div id="navbar-second">
                     <div className="categories-second">
