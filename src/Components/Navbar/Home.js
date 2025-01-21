@@ -12,6 +12,8 @@ import Bolly from "../../icon/bolly.webp"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 const Nav = () => {
+    const [cricketArticles, setCricketArticles] = useState([]);
+    const [bollywoodArticles, setBollywoodArticles] = useState([]);
     const [categories, setCategories] = useState([]);
     const [trendingNews, setTrendingNews] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -100,7 +102,7 @@ const Nav = () => {
 
     // Fetch cricket articles
     useEffect(() => {
-        const fetchDatacricket = async () => {
+        const fetchCricketArticles = async () => {
             try {
                 const response = await fetch(
                     'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket',
@@ -115,7 +117,7 @@ const Nav = () => {
 
                 if (response.ok) {
                     const data = await response.json();
-                    setArticles(data.articles || []);
+                    setCricketArticles(data.articles || []);
                 } else {
                     const errorData = await response.json();
                     setError(errorData.messages || 'Failed to fetch data');
@@ -127,12 +129,12 @@ const Nav = () => {
             }
         };
 
-        fetchDatacricket();
+        fetchCricketArticles();
     }, []);
 
     // Fetch bollywood articles
     useEffect(() => {
-        const fetchbollywood = async () => {
+        const fetchBollywoodArticles = async () => {
             try {
                 const response = await fetch(
                     'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood',
@@ -147,7 +149,8 @@ const Nav = () => {
 
                 if (response.ok) {
                     const data = await response.json();
-                    setArticles(data.articles || []);
+                    setBollywoodArticles(data.articles || []);
+
                     setLoading(false);
                 } else {
                     const errorData = await response.json();
@@ -160,14 +163,12 @@ const Nav = () => {
             }
         };
 
-        fetchbollywood();
+        fetchBollywoodArticles();
     }, []);
 
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
-
-
 
     return (
         <div id="main">
@@ -308,63 +309,81 @@ const Nav = () => {
             {/* Cricket Section */}
             <div id="cricket-articles-container">
                 <div className="cricket-titleicon">
-                    <img src={Cric} alt="News Icon" />
+                    <img src={Cric} alt="Cricket Icon" />
                     <h4 className="cricket-section-title">क्रिकेट</h4>
                 </div>
-
-                {articles.map((article, index) => (
-                    <div key={`cricket-${article.articleId || index}`} className="cricket-article">
-                        <div className="cricket-article-image-container">
-                            {article.image?.url && (
-                                <img
-                                    src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
-                                    alt={article.title || "Image"}
-                                    className="cricket-article-image"
-                                />
-                            )}
+                {cricketArticles.length > 0 ? (
+                    cricketArticles.map((article, index) => (
+                        <div key={`cricket-${article.articleId || index}`} className="cricket-article">
+                            <div className="cricket-article-image-container">
+                                {article.image?.url ? (
+                                    <img
+                                        src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
+                                        alt={article.title || "Cricket article image"}
+                                        className="cricket-article-image"
+                                    />
+                                ) : (
+                                    <img
+                                        src="/path-to-placeholder-image.jpg"
+                                        alt="Placeholder"
+                                        className="cricket-article-image"
+                                    />
+                                )}
+                            </div>
+                            <div className="cricket-article-body">
+                                <h3 className="cricket-article-title">{article.title}</h3>
+                                <p className="cricket-article-date">
+                                    {article.publishedDate
+                                        ? new Date(article.publishedDate * 1000).toDateString()
+                                        : "Date not available"}
+                                </p>
+                            </div>
                         </div>
-                        <div className="cricket-article-body">
-                            <h3 className="cricket-article-title">{article.title}</h3>
-                            <p className="cricket-article-date">
-                                {article.publishedDate
-                                    ? new Date(article.publishedDate * 1000).toDateString()
-                                    : "Date not available"}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+                    ))
+                ) : (
+                    <p>No cricket articles available.</p>
+                )}
             </div>
 
-            {/* Bollywood */}
+            {/* Bollywood Section */}
             <div id="bollywood-articles-container">
                 <div className="bollywood-titleicon">
-                    <img src={Bolly} alt="News Icon" />
+                    <img src={Bolly} alt="Bollywood Icon" />
                     <h4 className="bollywood-section-title">बॉलीवुड</h4>
                 </div>
-
-                {articles.map((article, index) => (
-                    <div key={`bollywood-${article.articleId || index}`} className="bollywood-article">
-                        <div className="bollywood-article-image-container">
-                            {article.image?.url && (
-                                <img
-                                    src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
-                                    alt={article.title || "Image"}
-                                    className="bollywood-article-image"
-                                />
-                            )}
+                {bollywoodArticles.length > 0 ? (
+                    bollywoodArticles.map((article, index) => (
+                        <div key={`bollywood-${article.articleId || index}`} className="bollywood-article">
+                            <div className="bollywood-article-image-container">
+                                {article.image?.url ? (
+                                    <img
+                                        src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
+                                        alt={article.title || "Bollywood article image"}
+                                        className="bollywood-article-image"
+                                    />
+                                ) : (
+                                    <img
+                                        src="/path-to-placeholder-image.jpg"
+                                        alt="Placeholder"
+                                        className="bollywood-article-image"
+                                    />
+                                )}
+                            </div>
+                            <div className="bollywood-article-body">
+                                <h3 className="bollywood-article-title">{article.title}</h3>
+                                <p className="bollywood-article-date">
+                                    {article.publishedDate
+                                        ? new Date(article.publishedDate * 1000).toDateString()
+                                        : "Date not available"}
+                                </p>
+                            </div>
                         </div>
-                        <div className="bollywood-article-body">
-                            <h3 className="bollywood-article-title">{article.title}</h3>
-                            <p className="bollywood-article-date">
-                                {article.publishedDate
-                                    ? new Date(article.publishedDate * 1000).toDateString()
-                                    : "Date not available"}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+                    ))
+                ) : (
+                    <p>No bollywood articles available.</p>
+                )}
             </div>
-
+            
 
             <div id="footer">
                 <div class="footer-content">
@@ -446,7 +465,7 @@ const Nav = () => {
                 </div>
             </div>
         </div>
-       
+
 
 
 
