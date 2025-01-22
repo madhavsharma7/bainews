@@ -6,10 +6,9 @@ import app from "../../icon/link.png";
 import android from "../../icon/android.webp";
 import ios from "../../icon/ios.webp";
 import newsicon from "../../icon/icon news.webp";
-// import Niti from "../Niti/Niti";
 import Cric from "../../icon/cricket.webp";
 import Bolly from "../../icon/bolly.webp"
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom"; 
 
 const Nav = () => {
     const [cricketArticles, setCricketArticles] = useState([]);
@@ -199,12 +198,12 @@ const Nav = () => {
                                     <span className="category-icon">
                                         <img src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurg.7316a2a4.png&w=32&q=75" />
                                     </span>
-                                    {/* <a href={`दुर्ग`} className="navbar-link">
+                                    <a href={`दुर्ग`} className="navbar-link">
                                         दुर्ग
-                                    </a> */}
-                                    <Link to="/दुर्ग" className="navbar-link">
+                                    </a>
+                                    {/* <Link to="/दुर्ग" className="navbar-link">
                                         दुर्ग
-                                    </Link>
+                                    </Link> */}
                                 </li>
 
                                 <li key="6721db546ab618a2a465961d" className="navbar-item">
@@ -231,13 +230,13 @@ const Nav = () => {
                     {/* Right Section Links */}
                     <div className="right-section">
                         <nav>
-                            <Link to="/niti" className="right-link">
+                            <a className="right-link">
                                 गोपनीयता नीति
-                            </Link>
+                            </a>
                             <span className="separator"> | </span>
-                            <Link className="right-link">
+                            <a className="right-link">
                                 नियम एवं शर्तें
-                            </Link>
+                            </a>
                         </nav>
 
                     </div>

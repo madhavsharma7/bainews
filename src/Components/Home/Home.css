@@ -247,6 +247,7 @@
     padding: 15px;
     overflow-y: hidden;
     padding-bottom: 2%;
+
 }
 
 .article {
@@ -311,7 +312,8 @@
 
 #cricket-articles-container {
     margin-left: 28.2%;
-    margin-top: 21%;
+    margin-top: 2%;
+    /* margin-top: 22%; */
     width: 70.9%;
     background-color: #F8F8F8;
     /* background-color: aqua; */
@@ -359,7 +361,6 @@
 
 /* Bollywood */
 
-
 .bollywood-titleicon {
     display: flex;
 }
@@ -383,7 +384,7 @@
 
 #bollywood-articles-container {
     margin-left: 28.2%;
-    margin-top: -18%;
+    margin-top: 2%;
     width: 70.9%;
     background-color: #F8F8F8;
     /* background-color: aqua; */
@@ -429,10 +430,10 @@
 }
 
 
-#navbar-second{
+#navbar-second {
     display: none;
 }
 
-#footer{
+#footer {
     display: none;
 }
