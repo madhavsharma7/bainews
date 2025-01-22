@@ -312,7 +312,7 @@
 
 #cricket-articles-container {
     position: relative;
-    top: -28vh;
+    top: -32vh;
     margin-left: 28.2%;
     width: 70.9%;
     background-color: #F8F8F8;
@@ -320,6 +320,7 @@
     border-radius: 10px;
     padding: 15px;
     overflow-y: hidden;
+    margin-top: 15px;
 }
 
 .cricket-article {
@@ -429,8 +430,154 @@
     margin-top: 7vh;
 }
 
+/* ****************************** */
+
+.education-titleicon {
+    display: flex;
+}
+
+.education-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.education-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.education-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#education-articles-container {
+    position: relative;
+    top: -26vh;
+    margin-left: 28.2%;
+    margin-top: 15px;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.education-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.education-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.education-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.education-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.education-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
+
+
+/* ******************************* */
+/* sports */
+
+.sports-titleicon {
+    display: flex;
+}
+
+.sports-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.sports-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.sports-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#sports-articles-container {
+    position: relative;
+    top: -26vh;
+    margin-left: 28.2%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+    margin-top: 15px;
+}
+
+.sports-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.sports-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.sports-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.sports-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sports-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sports-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
 
 /* politics */
+
 
 .politics-titleicon {
     display: flex;
@@ -455,7 +602,7 @@
 
 #politics-articles-container {
     position: relative;
-    top: -23vh;
+    top: -26vh;
     margin-left: 28.2%;
     width: 70.9%;
     background-color: #F8F8F8;
@@ -501,148 +648,6 @@
     margin-top: 7vh;
 }
 
-/* sports */
-
-.international-titleicon {
-    display: flex;
-}
-
-.international-titleicon img {
-    width: 2.5vw;
-    height: 5vh;
-}
-
-.international-titleicon h4 {
-    position: relative;
-    left: -2%;
-    margin-top: 0.2%;
-}
-
-.international-section-title {
-    margin-bottom: 2%;
-    margin-left: 4%;
-    font-size: 1.5vw;
-}
-
-#international-articles-container {
-    position: relative;
-    top: -18vh;
-    margin-left: 28.2%;
-    width: 70.9%;
-    background-color: #F8F8F8;
-    /* background-color: aqua; */
-    border-radius: 10px;
-    padding: 15px;
-    overflow-y: hidden;
-}
-
-.international-article {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-}
-
-.international-article-image-container {
-    width: 20%;
-    height: 100%;
-}
-
-.international-article-body {
-    width: 80%;
-    padding: 20px;
-}
-
-.international-article-image {
-    height: 90%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.international-article-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.international-article-date {
-    font-size: 1vw;
-    color: #7b7b7b;
-    margin-top: 7vh;
-}
-
-/* Sports*/
-
-.sports-titleicon {
-    display: flex;
-}
-
-.sports-titleicon img {
-    width: 2.5vw;
-    height: 5vh;
-}
-
-.sports-titleicon h4 {
-    position: relative;
-    left: -2%;
-    margin-top: 0.2%;
-}
-
-.sports-section-title {
-    margin-bottom: 2%;
-    margin-left: 4%;
-    font-size: 1.5vw;
-}
-
-#sports-articles-container {
-    position: relative;
-    top: -20vh;
-    margin-left: 28.2%;
-    width: 70.9%;
-    background-color: #F8F8F8;
-    /* background-color: aqua; */
-    border-radius: 10px;
-    padding: 15px;
-    overflow-y: hidden;
-}
-
-.sports-article {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-}
-
-.sports-article-image-container {
-    width: 20%;
-    height: 100%;
-}
-
-.sports-article-body {
-    width: 80%;
-    padding: 20px;
-}
-
-.sports-article-image {
-    height: 90%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.sports-article-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.sports-article-date {
-    font-size: 1vw;
-    color: #7b7b7b;
-    margin-top: 7vh;
-}
-
 #navbar-second{
     display: none;
 }
@@ -650,7 +655,5 @@
 #footer{
     display: none;
 }
-
-
 
 

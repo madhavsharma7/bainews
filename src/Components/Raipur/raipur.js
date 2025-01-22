@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from "react";
-import "./Term.css";
+import "./raipur.css";
 import "./Media.css";
 import homeImg from "../Components/icon/house.webp";
 import app from "../Components/icon/link.png";
@@ -7,25 +7,22 @@ import android from "../Components/icon/android.webp";
 import ios from "../Components/icon/ios.webp";
 import newsicon from "../Components/icon/icon news.webp";
 import Cric from "../Components/icon/politcs.webp";
-import Bolly from "../Components/icon/bolly.webp";
-import poli from "../Components/icon/politcs.webp";
-import spor from "../Components/icon/khel.webp";
-import inter from "../Components/icon/international.webp";
-const Nav = () => {
+import khel from "../Components/icon/khel.webp"
+import shiksha from "../Components/icon/education.webp"
 
+const Nav = () => {
   const [cricketArticles, setCricketArticles] = useState([]);
   const [bollywoodArticles, setBollywoodArticles] = useState([]);
   const [politicsarticles, setPolitics] = useState([]);
-  const [internationalArticles, setInternationalArticles] = useState([]);
-  const [sportsarticles, setSports] = useState([]);
-
   const [categories, setCategories] = useState([]);
   const [trendingNews, setTrendingNews] = useState([]);
   const [articles, setArticles] = useState([]);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [internationalArticles, setInternationalArticles] = useState([]);
+  const [education, setEducation] = useState([]);
+  const [sports, setSports] = useState([]);
 
   // Fetch categories
   useEffect(() => {
@@ -85,7 +82,7 @@ const Nav = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://article.api.dev.baisahab.com/api/homePageWeb?iSimpleCategoryId=6721db02bd158caa6b7a2516",
+        "https://article.api.dev.baisahab.com/api/homePageWeb?iSimpleCategoryId=6721dac06ab618a2a46595ff",
         {
           method: "GET",
           headers: { "client-origin": "BaiSahab" },
@@ -208,12 +205,13 @@ const Nav = () => {
     politcs();
   }, []);
 
-  // fetch international news
+
+  // fetch education
   useEffect(() => {
-    const Internationalnews = async () => {
+    const educationNews = async () => {
       try {
         const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Finternational",
+          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Feducation",
           {
             method: "GET",
             headers: {
@@ -225,7 +223,7 @@ const Nav = () => {
 
         if (response.ok) {
           const data = await response.json();
-          setInternationalArticles(data.articles || []);
+          setEducation(data.articles || []);
         } else {
           const errorData = await response.json();
           setError(errorData.messages || "Failed to fetch data");
@@ -237,7 +235,7 @@ const Nav = () => {
       }
     };
 
-    Internationalnews();
+    educationNews();
   }, []);
 
   //fetch sports
@@ -460,53 +458,11 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Bollywood Section */}
-      <div id="bollywood-articles-container">
-        <div className="bollywood-titleicon">
-          <img src={Bolly} alt="Bollywood Icon" />
-          <h4 className="bollywood-section-title">बॉलीवुड</h4>
-        </div>
-        {bollywoodArticles.length > 0 ? (
-          bollywoodArticles.map((article, index) => (
-            <div
-              key={`bollywood-${article.articleId || index}`}
-              className="bollywood-article"
-            >
-              <div className="bollywood-article-image-container">
-                {article.image?.url ? (
-                  <img
-                    src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
-                    alt={article.title || "Bollywood article image"}
-                    className="bollywood-article-image"
-                  />
-                ) : (
-                  <img
-                    src="/path-to-placeholder-image.jpg"
-                    alt="Placeholder"
-                    className="bollywood-article-image"
-                  />
-                )}
-              </div>
-              <div className="bollywood-article-body">
-                <h3 className="bollywood-article-title">{article.title}</h3>
-                <p className="bollywood-article-date">
-                  {article.publishedDate
-                    ? new Date(article.publishedDate * 1000).toDateString()
-                    : "Date not available"}
-                </p>
-              </div>
-            </div>
-          ))
-        ) : (
-          <p>No Bollywood articles available.</p>
-        )}
-      </div>
 
       {/* Politics Section */}
-
       <div id="politics-articles-container">
         <div className="politics-titleicon">
-          <img src={poli} alt="Politics Icon" />
+          <img src={Cric} alt="Politics Icon" />
           <h4 className="politics-section-title">राजनीति</h4>
         </div>
         {politicsarticles.length > 0 ? (
@@ -545,14 +501,14 @@ const Nav = () => {
         )}
       </div>
 
-      {/* sports Section */}
+      {/* Sports Section */}
       <div id="sports-articles-container">
         <div className="sports-titleicon">
-          <img src={spor} alt="Politics Icon" />
-          <h4 className="sports-section-title"> खेल </h4>
+          <img src={khel} alt="Politics Icon" />
+          <h4 className="sports-section-title">खेल</h4>
         </div>
-        {sportsarticles.length > 0 ? (
-          sportsarticles.map((article, index) => (
+        {sports.length > 0 ? (
+          sports.map((article, index) => (
             <div
               key={`sports-${article.articleId || index}`}
               className="sports-article"
@@ -583,41 +539,40 @@ const Nav = () => {
             </div>
           ))
         ) : (
-          <p>No education articles available.</p>
+          <p>No sports articles available.</p>
         )}
       </div>
 
-      {/* international Section */}
-
-      <div id="international-articles-container">
-        <div className="international-titleicon">
-          <img src={inter} alt="Politics Icon" />
-          <h4 className="international-section-title"> अंतरराष्ट्रीय </h4>
+      {/* Education Section */}
+      <div id="education-articles-container">
+        <div className="education-titleicon">
+          <img src={shiksha} alt="Politics Icon" />
+          <h4 className="education-section-title">शिक्षा</h4>
         </div>
-        {internationalArticles.length > 0 ? (
-          internationalArticles.map((article, index) => (
+        {education.length > 0 ? (
+          education.map((article, index) => (
             <div
-              key={`international-${article.articleId || index}`}
-              className="international-article"
+              key={`education-${article.articleId || index}`}
+              className="education-article"
             >
-              <div className="international-article-image-container">
+              <div className="education-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "education article image"}
-                    className="international-article-image"
+                    className="education-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="international-article-image"
+                    className="education-article-image"
                   />
                 )}
               </div>
-              <div className="international-article-body">
-                <h3 className="international-article-title">{article.title}</h3>
-                <p className="international-article-date">
+              <div className="education-article-body">
+                <h3 className="education-article-title">{article.title}</h3>
+                <p className="education-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -630,7 +585,6 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Footer */}
       <div id="footer">
 
         <div class="footer-content">

@@ -1,0 +1,426 @@
+@media screen and (max-width: 600px) {
+
+    #footer {
+        display: block;
+    }
+
+    #navbar-second {
+        display: block;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    #trending-news-container {
+        display: none;
+    }
+
+    #articles-container {
+        background-color: white;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .article-image-container {
+        height: 16vh;
+    }
+
+    .article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+
+    /* Cricket  */
+    #cricket-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: 30%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .cricket-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .cricket-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .cricket-article-image-container {
+        height: 16vh;
+    }
+
+    .cricket-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .cricket-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+    /* Bollywood*/
+
+
+    #bollywood-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: -6%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .bollywood-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .bollywood-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .bollywood-article-image-container {
+        height: 16vh;
+    }
+
+    .bollywood-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .bollywood-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+
+    /* Politics */
+
+
+    #politics-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: -6%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .politics-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .politics-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .politics-article-image-container {
+        height: 16vh;
+    }
+
+    .politics-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .politics-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+    /* Sports */
+
+
+    #sports-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: -3%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .sports-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .sports-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .sports-article-image-container {
+        height: 16vh;
+    }
+
+    .sports-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .sports-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+    /* International*/
+
+    #international-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: -3%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .international-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .international-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .international-article-image-container {
+        height: 16vh;
+    }
+
+    .international-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .international-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+    /* Education  */
+    #education-articles-container {
+        position: relative;
+        left: -24vw;
+        margin-top: -3%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .education-titleicon img {
+        position: relative;
+        top: -5px;
+        height: 6vh;
+        width: 4vw;
+    }
+
+    .education-titleicon h4 {
+        font-size: 3vw;
+    }
+
+    .education-article-image-container {
+        height: 16vh;
+    }
+
+    .education-article-title {
+        font-size: 2.5vw;
+        font-weight: 650;
+    }
+
+    .education-article-date {
+        position: relative;
+        top: -3vw;
+        font-size: 2.5vw;
+    }
+
+
+    /* Footer */
+
+    #footer {
+        margin-top: -20%;
+        height: 20%;
+        background-color: #161616;
+        padding-bottom: 4vh;
+    }
+
+    .footer-logo {
+        overflow-y: hidden;
+    }
+
+    .footer-logo img {
+        position: relative;
+        left: -30%;
+        top: 2vh;
+        width: 30vw;
+        height: 10vh;
+
+    }
+
+    .right-section-footer {
+        color: white;
+        margin-top: 5vh;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+        /* Adjust spacing between items */
+        text-align: left;
+    }
+
+    .right-link-footer {
+        text-decoration: none;
+        color: #7A7B7A;
+        margin-left: 5vw;
+    }
+
+    .email {
+        color: #7A7B7A;
+    }
+
+    .application-link {
+        margin-left: -72%;
+        margin-top: 5vh;
+        font-size: 2.5vw;
+    }
+
+    .link {
+        margin-top: 3vh;
+        margin-left: 2vw;
+
+    }
+
+    .link img {
+        padding-left: 2vw;
+        
+    }
+
+    .android {
+        height: 6vh;
+        margin-left: -45%;
+    }
+
+    .ios {
+        height: 6vh;
+    }
+
+    hr {
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 5%;
+        color: white;
+    }
+
+    .copyright {
+        margin-top: 2%;
+        font-size: 2.5vw;
+        color: #D1D0D1;
+        text-align: center;
+        margin-bottom: 10vh;
+
+    }
+
+    #bottom-navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #2c2c2c;
+        /* Adjust as needed for styling */
+        z-index: 1000;
+    }
+
+    #navbar-second {
+        padding: 10px 20px;
+
+    }
+
+    .categories-second {
+        display: flex;
+        justify-content: center;
+        /* Center align menu horizontally */
+        align-items: center;
+    }
+
+    .navbar-menu-second {
+        display: flex;
+        justify-content: space-evenly;
+        /* Equal spacing between items */
+        align-items: center;
+        gap: 20vw;
+        /* Adjust the gap between items */
+    }
+
+    .navbar-item-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .navbar-link-second {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .homeicon-second,
+    .category-icon-second img {
+        width: 3vw;
+        height: 3vh;
+        margin-bottom: 5px;
+
+    }
+
+    .hometext-second,
+    .navbar-link-second {
+
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
