@@ -112,13 +112,12 @@
 }
 
 /* Sidebar - Latest News Section */
-
-
 #main-body {
     display: flex;
     width: 100vw;
     margin-left: 2vw;
     margin-top: 13vh;
+   
 }
 
 #trending-news-container {
@@ -157,7 +156,6 @@
 .card-body {
     width: 60%;
     margin-top: 5%;
-
 }
 
 #main-body div .card-title {
@@ -242,11 +240,10 @@
     margin-top: 1%;
     width: 70%;
     background-color: #F8F8F8;
-    /* background-color: aqua; */
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     overflow-y: hidden;
-    padding-bottom: 2%;
+    height: fit-content; 
 }
 
 .article {
@@ -254,6 +251,8 @@
     height: 10%;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
+   
 }
 
 .article-image-container {
@@ -283,10 +282,10 @@
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
-}
+} 
 
 
-/* Cricket  */
+/*Cricket   */
 
 .cricket-titleicon {
     display: flex;
@@ -310,8 +309,9 @@
 }
 
 #cricket-articles-container {
+    position: relative;
+    top: -28vh;
     margin-left: 28.2%;
-    margin-top: 21%;
     width: 70.9%;
     background-color: #F8F8F8;
     /* background-color: aqua; */
@@ -356,9 +356,7 @@
     margin-top: 7vh;
 }
 
-
 /* Bollywood */
-
 
 .bollywood-titleicon {
     display: flex;
@@ -382,8 +380,9 @@
 }
 
 #bollywood-articles-container {
+    position: relative;
+    top: -26vh;
     margin-left: 28.2%;
-    margin-top: -18%;
     width: 70.9%;
     background-color: #F8F8F8;
     /* background-color: aqua; */
@@ -429,6 +428,219 @@
 }
 
 
+/* politics */
+
+.politics-titleicon {
+    display: flex;
+}
+
+.politics-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.politics-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.politics-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#politics-articles-container {
+    position: relative;
+    top: -23vh;
+    margin-left: 28.2%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.politics-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.politics-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.politics-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.politics-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.politics-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.politics-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
+
+/* sports */
+
+.international-titleicon {
+    display: flex;
+}
+
+.international-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.international-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.international-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#international-articles-container {
+    position: relative;
+    top: -18vh;
+    margin-left: 28.2%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.international-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.international-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.international-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.international-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.international-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.international-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
+
+/* Sports*/
+
+.sports-titleicon {
+    display: flex;
+}
+
+.sports-titleicon img {
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.sports-titleicon h4 {
+    position: relative;
+    left: -2%;
+    margin-top: 0.2%;
+}
+
+.sports-section-title {
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 1.5vw;
+}
+
+#sports-articles-container {
+    position: relative;
+    top: -20vh;
+    margin-left: 28.2%;
+    width: 70.9%;
+    background-color: #F8F8F8;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.sports-article {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.sports-article-image-container {
+    width: 20%;
+    height: 100%;
+}
+
+.sports-article-body {
+    width: 80%;
+    padding: 20px;
+}
+
+.sports-article-image {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sports-article-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sports-article-date {
+    font-size: 1vw;
+    color: #7b7b7b;
+    margin-top: 7vh;
+}
+
 #navbar-second{
     display: none;
 }
@@ -436,3 +648,7 @@
 #footer{
     display: none;
 }
+
+
+
+
