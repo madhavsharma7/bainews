@@ -1,16 +1,16 @@
 import React, { use, useEffect, useState } from "react";
 import "./bhilai.css";
 import "./Media.css";
-import homeImg from "../Components/icon/house.webp";
-import app from "../Components/icon/link.png";
-import android from "../Components/icon/android.webp";
-import ios from "../Components/icon/ios.webp";
-import newsicon from "../Components/icon/icon news.webp";
-import Cric from "../Components/icon/politcs.webp";
-import Bolly from "../Components/icon/bolly.webp";
-import poli from "../Components/icon/politcs.webp";
-import spor from "../Components/icon/khel.webp";
-import inter from "../Components/icon/international.webp";
+import homeImg from "../../icon/house.webp";
+import app from "../../icon/link.png";
+import android from "../../icon/android.webp";
+import ios from "../../icon/ios.webp";
+import newsicon from "../../icon/icon news.webp";
+import Cric from "../../icon/politcs.webp";
+import Bolly from "../../icon/bolly.webp";
+import poli from "../../icon/politcs.webp";
+import spor from "../../icon/khel.webp";
+import inter from "../../icon/international.webp";
 const Nav = () => {
 
   const [cricketArticles, setCricketArticles] = useState([]);
@@ -113,70 +113,71 @@ const Nav = () => {
   }, []);
 
   // Fetch cricket articles
-  useEffect(() => {
-    const fetchCricketArticles = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const fetchCricketArticles = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setCricketArticles(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setCricketArticles(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchCricketArticles();
-  }, []);
+  //   fetchCricketArticles();
+  // }, []);
 
   // Fetch bollywood articles
-  useEffect(() => {
-    const fetchBollywoodArticles = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const fetchBollywoodArticles = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setBollywoodArticles(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching Bollywood articles");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setBollywoodArticles(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching Bollywood articles");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchBollywoodArticles();
-  }, []);
+  //   fetchBollywoodArticles();
+  // }, []);
 
   // Fetch politics articles
+
   useEffect(() => {
     const politcs = async () => {
       try {
@@ -209,69 +210,69 @@ const Nav = () => {
   }, []);
 
   // fetch international news
-  useEffect(() => {
-    const Internationalnews = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Finternational",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const Internationalnews = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Finternational",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setInternationalArticles(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setInternationalArticles(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    Internationalnews();
-  }, []);
+  //   Internationalnews();
+  // }, []);
 
-  //fetch sports
-  useEffect(() => {
-    const sportsNews = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fsports",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // //fetch sports
+  // useEffect(() => {
+  //   const sportsNews = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fsports",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setSports(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setSports(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    sportsNews();
-  }, []);
-  //   js
+  //   sportsNews();
+  // }, []);
+
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
@@ -388,26 +389,26 @@ const Nav = () => {
         </div>
 
         {/* Articles */}
-        <div id="articles-container">
-          <div className="titleicon">
+        <div id="arti-container">
+          <div className="titlleicon">
             <img src={newsicon} alt="News Icon" />
-            <h4 className="section-title">ताज़ा खबर</h4>
+            <h4 className="sec-title">ताज़ा खबर</h4>
           </div>
 
           {data.map((article) => (
-            <div key={article.articleId} className="article">
-              <div className="article-image-container">
+            <div key={article.articleId} className="arti">
+              <div className="arti-image-container">
                 {article.image?.url && (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "Image"}
-                    className="article-image"
+                    className="arti-image"
                   />
                 )}
               </div>
-              <div className="article-body">
-                <h3 className="article-title">{article.title}</h3>
-                <p className="article-date">
+              <div className="arti-body">
+                <h3 className="arti-title">{article.title}</h3>
+                <p className="arti-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -419,35 +420,35 @@ const Nav = () => {
       </div>
 
       {/* Cricket Section */}
-      <div id="cricket-articles-container">
-        <div className="cricket-titleicon">
+      <div id="cric-articles-container">
+        <div className="cric-titleicon">
           <img src={Cric} alt="Cricket Icon" />
-          <h4 className="cricket-section-title">क्रिकेट</h4>
+          <h4 className="cric-section-title">क्रिकेट</h4>
         </div>
         {cricketArticles.length > 0 ? (
           cricketArticles.map((article, index) => (
             <div
               key={`cricket-${article.articleId || index}`}
-              className="cricket-article"
+              className="cric-article"
             >
-              <div className="cricket-article-image-container">
+              <div className="cric-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "Cricket article image"}
-                    className="cricket-article-image"
+                    className="cric-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="cricket-article-image"
+                    className="cric-article-image"
                   />
                 )}
               </div>
-              <div className="cricket-article-body">
-                <h3 className="cricket-article-title">{article.title}</h3>
-                <p className="cricket-article-date">
+              <div className="cric-article-body">
+                <h3 className="cric-article-title">{article.title}</h3>
+                <p className="cric-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -461,35 +462,35 @@ const Nav = () => {
       </div>
 
       {/* Bollywood Section */}
-      <div id="bollywood-articles-container">
-        <div className="bollywood-titleicon">
+      <div id="boll-articles-container">
+        <div className="boll-titleicon">
           <img src={Bolly} alt="Bollywood Icon" />
-          <h4 className="bollywood-section-title">बॉलीवुड</h4>
+          <h4 className="boll-section-title">बॉलीवुड</h4>
         </div>
         {bollywoodArticles.length > 0 ? (
           bollywoodArticles.map((article, index) => (
             <div
               key={`bollywood-${article.articleId || index}`}
-              className="bollywood-article"
+              className="boll-article"
             >
-              <div className="bollywood-article-image-container">
+              <div className="boll-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "Bollywood article image"}
-                    className="bollywood-article-image"
+                    className="boll-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="bollywood-article-image"
+                    className="boll-article-image"
                   />
                 )}
               </div>
-              <div className="bollywood-article-body">
-                <h3 className="bollywood-article-title">{article.title}</h3>
-                <p className="bollywood-article-date">
+              <div className="boll-article-body">
+                <h3 className="boll-article-title">{article.title}</h3>
+                <p className="boll-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -504,35 +505,35 @@ const Nav = () => {
 
       {/* Politics Section */}
 
-      <div id="politics-articles-container">
-        <div className="politics-titleicon">
+      <div id="poli-articles-container">
+        <div className="poli-titleicon">
           <img src={poli} alt="Politics Icon" />
-          <h4 className="politics-section-title">राजनीति</h4>
+          <h4 className="poli-section-title">राजनीति</h4>
         </div>
         {politicsarticles.length > 0 ? (
           politicsarticles.map((article, index) => (
             <div
               key={`politics-${article.articleId || index}`}
-              className="politics-article"
+              className="poli-article"
             >
-              <div className="politics-article-image-container">
+              <div className="poli-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "Politics article image"}
-                    className="politics-article-image"
+                    className="poli-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="politics-article-image"
+                    className="poli-article-image"
                   />
                 )}
               </div>
-              <div className="politics-article-body">
-                <h3 className="politics-article-title">{article.title}</h3>
-                <p className="politics-article-date">
+              <div className="poli-article-body">
+                <h3 className="poli-article-title">{article.title}</h3>
+                <p className="poli-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -546,35 +547,35 @@ const Nav = () => {
       </div>
 
       {/* sports Section */}
-      <div id="sports-articles-container">
-        <div className="sports-titleicon">
-          <img src={spor} alt="Politics Icon" />
-          <h4 className="sports-section-title"> खेल </h4>
+      {/* <div id="spor-articles-container">
+        <div className="spor-titleicon">
+          <img src={spor} alt="Sports Icon" />
+          <h4 className="spor-section-title"> खेल </h4>
         </div>
         {sportsarticles.length > 0 ? (
           sportsarticles.map((article, index) => (
             <div
               key={`sports-${article.articleId || index}`}
-              className="sports-article"
+              className="spor-article"
             >
-              <div className="sports-article-image-container">
+              <div className="spor-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "sports article image"}
-                    className="sports-article-image"
+                    className="spor-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="sports-article-image"
+                    className="spor-article-image"
                   />
                 )}
               </div>
-              <div className="sports-article-body">
-                <h3 className="sports-article-title">{article.title}</h3>
-                <p className="sports-article-date">
+              <div className="spor-article-body">
+                <h3 className="spor-article-title">{article.title}</h3>
+                <p className="spor-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}
@@ -585,39 +586,39 @@ const Nav = () => {
         ) : (
           <p>No education articles available.</p>
         )}
-      </div>
+      </div> */}
 
       {/* international Section */}
 
-      <div id="international-articles-container">
-        <div className="international-titleicon">
+      <div id="inter-articles-container">
+        <div className="intern-titleicon">
           <img src={inter} alt="Politics Icon" />
-          <h4 className="international-section-title"> अंतरराष्ट्रीय </h4>
+          <h4 className="inter-section-title"> अंतरराष्ट्रीय </h4>
         </div>
         {internationalArticles.length > 0 ? (
           internationalArticles.map((article, index) => (
             <div
-              key={`international-${article.articleId || index}`}
-              className="international-article"
+              key={`intern-${article.articleId || index}`}
+              className="intern-article"
             >
-              <div className="international-article-image-container">
+              <div className="inter-article-image-container">
                 {article.image?.url ? (
                   <img
                     src={`https://storage.googleapis.com/media.dev.baisahab.com/${article.image.url}`}
                     alt={article.title || "education article image"}
-                    className="international-article-image"
+                    className="inter-article-image"
                   />
                 ) : (
                   <img
                     src="/path-to-placeholder-image.jpg"
                     alt="Placeholder"
-                    className="international-article-image"
+                    className="inter-article-image"
                   />
                 )}
               </div>
-              <div className="international-article-body">
-                <h3 className="international-article-title">{article.title}</h3>
-                <p className="international-article-date">
+              <div className="inter-article-body">
+                <h3 className="inter-article-title">{article.title}</h3>
+                <p className="inter-article-date">
                   {article.publishedDate
                     ? new Date(article.publishedDate * 1000).toDateString()
                     : "Date not available"}

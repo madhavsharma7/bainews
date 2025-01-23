@@ -20,33 +20,33 @@
         display: none;
     }
 
-    #articles-container {
+    #arti-container {
         background-color: white;
         width: 100%;
         overflow: hidden;
     }
 
-    .titleicon img {
+    .titlleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .titleicon h4 {
+    .titlleicon h4 {
         font-size: 3vw;
     }
 
-    .article-image-container {
+    .arti-image-container {
         height: 16vh;
     }
 
-    .article-title {
+    .arti-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .article-date {
+    .arti-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
@@ -54,7 +54,7 @@
 
 
     /* Cricket  */
-    #cricket-articles-container {
+    #cric-articles-container {
         position: relative;
         left: -24vw;
         margin-top: 30%;
@@ -62,27 +62,27 @@
         width: 100%;
     }
 
-    .cricket-titleicon img {
+    .cric-titleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .cricket-titleicon h4 {
+    .cric-titleicon h4 {
         font-size: 3vw;
     }
 
-    .cricket-article-image-container {
+    .cric-article-image-container {
         height: 16vh;
     }
 
-    .cricket-article-title {
+    .cric-article-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .cricket-article-date {
+    .cric-article-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
@@ -91,7 +91,7 @@
     /* Bollywood*/
 
 
-    #bollywood-articles-container {
+    #boll-articles-container {
         position: relative;
         left: -24vw;
         margin-top: -6%;
@@ -99,27 +99,27 @@
         width: 100%;
     }
 
-    .bollywood-titleicon img {
+    .boll-titleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .bollywood-titleicon h4 {
+    .boll-titleicon h4 {
         font-size: 3vw;
     }
 
-    .bollywood-article-image-container {
+    .boll-article-image-container {
         height: 16vh;
     }
 
-    .bollywood-article-title {
+    .boll-article-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .bollywood-article-date {
+    .boll-article-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
@@ -129,7 +129,7 @@
     /* Politics */
 
 
-    #politics-articles-container {
+    #poli-articles-container {
         position: relative;
         left: -24vw;
         margin-top: -6%;
@@ -137,27 +137,27 @@
         width: 100%;
     }
 
-    .politics-titleicon img {
+    .poli-titleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .politics-titleicon h4 {
+    .poli-titleicon h4 {
         font-size: 3vw;
     }
 
-    .politics-article-image-container {
+    .poli-article-image-container {
         height: 16vh;
     }
 
-    .politics-article-title {
+    .poli-article-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .politics-article-date {
+    .poli-article-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
@@ -165,7 +165,7 @@
     /* Sports */
 
 
-    #sports-articles-container {
+    #spo-articles-container {
         position: relative;
         left: -24vw;
         margin-top: -3%;
@@ -173,27 +173,27 @@
         width: 100%;
     }
 
-    .sports-titleicon img {
+    .spo-titleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .sports-titleicon h4 {
+    .spo-titleicon h4 {
         font-size: 3vw;
     }
 
-    .sports-article-image-container {
+    .spo-article-image-container {
         height: 16vh;
     }
 
-    .sports-article-title {
+    .spo-article-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .sports-article-date {
+    .spo-article-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
@@ -201,7 +201,7 @@
 
     /* International*/
 
-    #international-articles-container {
+    #inter-articles-container {
         position: relative;
         left: -24vw;
         margin-top: -3%;
@@ -209,32 +209,31 @@
         width: 100%;
     }
 
-    .international-titleicon img {
+    .inter-titleicon img {
         position: relative;
         top: -5px;
         height: 6vh;
         width: 4vw;
     }
 
-    .international-titleicon h4 {
+    .inter-titleicon h4 {
         font-size: 3vw;
     }
 
-    .international-article-image-container {
+    .inter-article-image-container {
         height: 16vh;
     }
 
-    .international-article-title {
+    .inter-article-title {
         font-size: 2.5vw;
         font-weight: 650;
     }
 
-    .international-article-date {
+    .inter-article-date {
         position: relative;
         top: -3vw;
         font-size: 2.5vw;
     }
-
 
     /* Footer */
 

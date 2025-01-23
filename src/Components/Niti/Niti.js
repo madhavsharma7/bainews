@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import "./Niti.css";
 import "./Media.css"
-import homeImg from "../Components/icon/house.webp";
-import app from "../Components/icon/link.png";
-import android from "../Components/icon/android.webp";
-import ios from "../Components/icon/ios.webp";
-import newsicon from "../Components/icon/icon news.webp";
-import Cric from "../Components/icon/politcs.webp";
-import Bolly from "../Components/icon/bolly.webp"
+import homeImg from "../../icon/house.webp";
+import app from "../../icon/link.png";
+import android from "../../icon/android.webp";
+import ios from "../../icon/ios.webp";
+// import newsicon from "../../icon/icon news.webp";
+// import Cric from "../../icon/politcs.webp";
+// import Bolly from "../../icon/bolly.webp"
 
 
 const Nav = () => {

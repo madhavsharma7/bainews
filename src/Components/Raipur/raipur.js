@@ -1,14 +1,14 @@
 import React, { use, useEffect, useState } from "react";
 import "./raipur.css";
 import "./Media.css";
-import homeImg from "../Components/icon/house.webp";
-import app from "../Components/icon/link.png";
-import android from "../Components/icon/android.webp";
-import ios from "../Components/icon/ios.webp";
-import newsicon from "../Components/icon/icon news.webp";
-import Cric from "../Components/icon/politcs.webp";
-import khel from "../Components/icon/khel.webp"
-import shiksha from "../Components/icon/education.webp"
+import homeImg from "../../icon/house.webp";
+import app from "../../icon/link.png";
+import android from "../../icon/android.webp";
+import ios from "../../icon/ios.webp";
+import newsicon from "../../icon/icon news.webp";
+import Cric from "../../icon/politcs.webp";
+import khel from "../../icon/khel.webp"
+import shiksha from "../../icon/education.webp"
 
 const Nav = () => {
   const [cricketArticles, setCricketArticles] = useState([]);
@@ -110,68 +110,68 @@ const Nav = () => {
   }, []);
 
   // Fetch cricket articles
-  useEffect(() => {
-    const fetchCricketArticles = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const fetchCricketArticles = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fcricket",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setCricketArticles(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setCricketArticles(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchCricketArticles();
-  }, []);
+  //   fetchCricketArticles();
+  // }, []);
 
   // Fetch bollywood articles
-  useEffect(() => {
-    const fetchBollywoodArticles = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const fetchBollywoodArticles = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setBollywoodArticles(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching Bollywood articles");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setBollywoodArticles(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching Bollywood articles");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchBollywoodArticles();
-  }, []);
+  //   fetchBollywoodArticles();
+  // }, []);
 
   // Fetch politics articles
   useEffect(() => {
@@ -207,69 +207,69 @@ const Nav = () => {
 
 
   // fetch education
-  useEffect(() => {
-    const educationNews = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Feducation",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const educationNews = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Feducation",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setEducation(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setEducation(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    educationNews();
-  }, []);
+  //   educationNews();
+  // }, []);
 
   //fetch sports
-  useEffect(() => {
-    const sportsNews = async () => {
-      try {
-        const response = await fetch(
-          "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fsports",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              "client-origin": "BaiSahab",
-            },
-          }
-        );
+  // useEffect(() => {
+  //   const sportsNews = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fsports",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             "client-origin": "BaiSahab",
+  //           },
+  //         }
+  //       );
 
-        if (response.ok) {
-          const data = await response.json();
-          setSports(data.articles || []);
-        } else {
-          const errorData = await response.json();
-          setError(errorData.messages || "Failed to fetch data");
-        }
-      } catch (err) {
-        setError("Something went wrong while fetching data");
-      } finally {
-        setLoading(false);
-      }
-    };
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setSports(data.articles || []);
+  //       } else {
+  //         const errorData = await response.json();
+  //         setError(errorData.messages || "Failed to fetch data");
+  //       }
+  //     } catch (err) {
+  //       setError("Something went wrong while fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    sportsNews();
-  }, []);
-  //   js
+  //   sportsNews();
+  // }, []);
+  
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;

@@ -214,28 +214,28 @@
 
 /* News */
 
-.titleicon {
+.titlleicon {
     display: flex;
 }
 
-.titleicon img {
+.titlleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.titleicon h4 {
+.titlleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.section-title {
+.sec-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#articles-container {
+#arti-container {
     margin-left: 2%;
     margin-top: 1%;
     width: 70%;
@@ -246,7 +246,7 @@
     height: fit-content; 
 }
 
-.article {
+.arti{
     width: 100%;
     height: 10%;
     display: flex;
@@ -255,30 +255,30 @@
    
 }
 
-.article-image-container {
+.arti-image-container {
     width: 20%;
     height: 100%;
 }
 
-.article-body {
+.arti-body {
     width: 80%;
     padding: 20px;
 }
 
-.article-image {
+.arti-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.article-title {
+.arti-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.article-date {
+.arti-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -287,28 +287,28 @@
 
 /*Cricket   */
 
-.cricket-titleicon {
+.cric-titleicon {
     display: flex;
 }
 
-.cricket-titleicon img {
+.cric-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.cricket-titleicon h4 {
+.cric-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.cricket-section-title {
+.cric-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#cricket-articles-container {
+#cric-articles-container {
     position: relative;
     top: -28vh;
     margin-left: 28.2%;
@@ -320,37 +320,37 @@
     overflow-y: hidden;
 }
 
-.cricket-article {
+.cric-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.cricket-article-image-container {
+.cric-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.cricket-article-body {
+.cric-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.cricket-article-image {
+.cric-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.cricket-article-title {
+.cric-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.cricket-article-date {
+.cric-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -358,28 +358,28 @@
 
 /* Bollywood */
 
-.bollywood-titleicon {
+.boll-titleicon {
     display: flex;
 }
 
-.bollywood-titleicon img {
+.boll-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.bollywood-titleicon h4 {
+.boll-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.bollywood-section-title {
+.boll-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#bollywood-articles-container {
+#boll-articles-container {
     position: relative;
     top: -26vh;
     margin-left: 28.2%;
@@ -391,37 +391,37 @@
     overflow-y: hidden;
 }
 
-.bollywood-article {
+.boll-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.bollywood-article-image-container {
+.boll-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.bollywood-article-body {
+.boll-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.bollywood-article-image {
+.boll-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.bollywood-article-title {
+.boll-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.bollywood-article-date {
+.boll-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -430,28 +430,28 @@
 
 /* politics */
 
-.politics-titleicon {
+.poli-titleicon {
     display: flex;
 }
 
-.politics-titleicon img {
+.poli-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.politics-titleicon h4 {
+.poli-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.politics-section-title {
+.poli-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#politics-articles-container {
+#poli-articles-container {
     position: relative;
     top: -23vh;
     margin-left: 28.2%;
@@ -463,66 +463,66 @@
     overflow-y: hidden;
 }
 
-.politics-article {
+.poli-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.politics-article-image-container {
+.poli-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.politics-article-body {
+.poli-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.politics-article-image {
+.poli-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.politics-article-title {
+.poli-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.politics-article-date {
+.poli-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
 }
 
-/* sports */
+/* International */
 
-.international-titleicon {
+.inter-titleicon {
     display: flex;
 }
 
-.international-titleicon img {
+.inter-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.international-titleicon h4 {
+.inter-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.international-section-title {
+.inter-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#international-articles-container {
+#inter-articles-container {
     position: relative;
     top: -18vh;
     margin-left: 28.2%;
@@ -534,37 +534,37 @@
     overflow-y: hidden;
 }
 
-.international-article {
+.inter-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.international-article-image-container {
+.inter-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.international-article-body {
+.inter-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.international-article-image {
+.inter-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.international-article-title {
+.inter-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.international-article-date {
+.inter-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -572,28 +572,28 @@
 
 /* Sports*/
 
-.sports-titleicon {
+.spo-titleicon {
     display: flex;
 }
 
-.sports-titleicon img {
+.spo-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.sports-titleicon h4 {
+.spo-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.sports-section-title {
+.spo-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#sports-articles-container {
+#spo-articles-container {
     position: relative;
     top: -20vh;
     margin-left: 28.2%;
@@ -605,37 +605,37 @@
     overflow-y: hidden;
 }
 
-.sports-article {
+.spo-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.sports-article-image-container {
+.spo-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.sports-article-body {
+.spo-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.sports-article-image {
+.spo-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.sports-article-title {
+.spo-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.sports-article-date {
+.spo-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;

@@ -131,37 +131,37 @@ const Nav = () => {
     }, []);
 
     // Fetch bollywood articles
-    useEffect(() => {
-        const fetchbollywood = async () => {
-            try {
-                const response = await fetch(
-                    'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood',
-                    {
-                        method: 'GET',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'client-origin': 'BaiSahab',
-                        },
-                    }
-                );
+    // useEffect(() => {
+    //     const fetchbollywood = async () => {
+    //         try {
+    //             const response = await fetch(
+    //                 'https://article.api.dev.baisahab.com/api/getTagArticlesById?slug=tag%2Fbollywood',
+    //                 {
+    //                     method: 'GET',
+    //                     headers: {
+    //                         'Content-Type': 'application/json',
+    //                         'client-origin': 'BaiSahab',
+    //                     },
+    //                 }
+    //             );
 
-                if (response.ok) {
-                    const data = await response.json();
-                    setArticles(data.articles || []);
-                    setLoading(false);
-                } else {
-                    const errorData = await response.json();
-                    setError(errorData.messages || 'Failed to fetch data');
-                    setLoading(false);
-                }
-            } catch (err) {
-                setError('Something went wrong while fetching data');
-                setLoading(false);
-            }
-        };
+    //             if (response.ok) {
+    //                 const data = await response.json();
+    //                 setArticles(data.articles || []);
+    //                 setLoading(false);
+    //             } else {
+    //                 const errorData = await response.json();
+    //                 setError(errorData.messages || 'Failed to fetch data');
+    //                 setLoading(false);
+    //             }
+    //         } catch (err) {
+    //             setError('Something went wrong while fetching data');
+    //             setLoading(false);
+    //         }
+    //     };
 
-        fetchbollywood();
-    }, []);
+    //     fetchbollywood();
+    // }, []);
 
 
 

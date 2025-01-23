@@ -20,7 +20,7 @@
          display: none;
      }
 
-     #articles-container {
+     #artic-container {
          background-color: white;
          width: 100%;
          overflow: hidden;
@@ -37,23 +37,23 @@
          font-size: 3vw;
      }
 
-     .article-image-container {
+     .artic-image-container {
          height: 16vh;
      }
 
-     .article-title {
+     .artic-title {
          font-size: 2.5vw;
          font-weight: 650;
      }
 
-     .article-date {
+     .artic-date {
          position: relative;
          top: -3vw;
          font-size: 2.5vw;
      }
 
      /* Cricket  */
-     #cricket-articles-container {
+     #crick-articles-container {
          position: relative;
          left: -25vw;
          top: -17vh;
@@ -61,33 +61,33 @@
          width: 100%;
      }
 
-     .cricket-titleicon img {
+     .crick-titleicon img {
          position: relative;
          top: -5px;
          height: 6vh;
          width: 4vw;
      }
 
-     .cricket-titleicon h4 {
+     .crick-titleicon h4 {
          font-size: 3vw;
      }
 
-     .cricket-article-image-container {
+     .crick-article-image-container {
          height: 16vh;
      }
 
-     .cricket-article-title {
+     .crick-article-title {
          font-size: 2.5vw;
          font-weight: 650;
      }
 
-     .cricket-article-date {
+     .crick-article-date {
          position: relative;
          top: -3vw;
          font-size: 2.5vw;
      }
 
-     #bollywood-articles-container {
+     #bolly-articles-container {
          position: relative;
          left: -25vw;
          top: -20vh;
@@ -96,27 +96,27 @@
 
      }
 
-     .bollywood-titleicon img {
+     .bolly-titleicon img {
          position: relative;
          top: -5px;
          height: 6vh;
          width: 4vw;
      }
 
-     .bollywood-titleicon h4 {
+     .bolly-titleicon h4 {
          font-size: 3vw;
      }
 
-     .bollywood-article-image-container {
+     .bolly-article-image-container {
          height: 16vh;
      }
 
-     .bollywood-article-title {
+     .bolly-article-title {
          font-size: 2.5vw;
          font-weight: 650;
      }
 
-     .bollywood-article-date {
+     .bolly-article-date {
          position: relative;
          top: -3vw;
          font-size: 2.5vw;

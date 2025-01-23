@@ -231,13 +231,13 @@
     margin-top: 0.2%;
 }
 
-.section-title {
+.sect-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#articles-container {
+#artic-container {
     margin-left: 2%;
     margin-top: 1%;
     width: 70%;
@@ -250,37 +250,37 @@
 
 }
 
-.article {
+.artic {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.article-image-container {
+.artic-image-container {
     width: 20%;
     height: 100%;
 }
 
-.article-body {
+.artic-body {
     width: 80%;
     padding: 20px;
 }
 
-.article-image {
+.artic-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.article-title {
+.artic-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.article-date {
+.artic-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -289,28 +289,28 @@
 
 /* Cricket  */
 
-.cricket-titleicon {
+.crick-titleicon {
     display: flex;
 }
 
-.cricket-titleicon img {
+.crick-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.cricket-titleicon h4 {
+.crick-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.cricket-section-title {
+.crick-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#cricket-articles-container {
+#crick-articles-container {
     margin-left: 28.2%;
     margin-top: 2%;
     /* margin-top: 22%; */
@@ -322,37 +322,37 @@
     overflow-y: hidden;
 }
 
-.cricket-article {
+.crick-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.cricket-article-image-container {
+.crick-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.cricket-article-body {
+.crick-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.cricket-article-image {
+.crick-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.cricket-article-title {
+.crick-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.cricket-article-date {
+.crick-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
@@ -361,28 +361,28 @@
 
 /* Bollywood */
 
-.bollywood-titleicon {
+.bolly-titleicon {
     display: flex;
 }
 
-.bollywood-titleicon img {
+.bolly-titleicon img {
     width: 2.5vw;
     height: 5vh;
 }
 
-.bollywood-titleicon h4 {
+.bolly-titleicon h4 {
     position: relative;
     left: -2%;
     margin-top: 0.2%;
 }
 
-.bollywood-section-title {
+.bolly-section-title {
     margin-bottom: 2%;
     margin-left: 4%;
     font-size: 1.5vw;
 }
 
-#bollywood-articles-container {
+#bolly-articles-container {
     margin-left: 28.2%;
     margin-top: 2%;
     width: 70.9%;
@@ -393,37 +393,37 @@
     overflow-y: hidden;
 }
 
-.bollywood-article {
+.bolly-article {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
 }
 
-.bollywood-article-image-container {
+.bolly-article-image-container {
     width: 20%;
     height: 100%;
 }
 
-.bollywood-article-body {
+.bolly-article-body {
     width: 80%;
     padding: 20px;
 }
 
-.bollywood-article-image {
+.bolly-article-image {
     height: 90%;
     width: 100%;
     border-radius: 10px;
 }
 
-.bollywood-article-title {
+.bolly-article-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
 
-.bollywood-article-date {
+.bolly-article-date {
     font-size: 1vw;
     color: #7b7b7b;
     margin-top: 7vh;
