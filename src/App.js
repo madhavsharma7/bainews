@@ -21,11 +21,11 @@ function App() {
         <Routes>
           {/* Define your routes */}
           <Route path="/" element={<Nav />} />
-          <Route path="/दुर्ग" element={<Durg />} />
+          {/* <Route path="/दुर्ग" element={<Durg />} />
           <Route path="/भिलाई" element={<Bhilai />}/>
-          <Route path="/रायपुर" element={<Raipur />}/>
+          <Route path="/रायपुर" element={<Raipur />}/> */}
           {/* <Route path="/गोपनीयता नीति" element={<Niti />}/> */}
-          <Route path="/नियम एवं शर्तें" element={<Term />}/>
+          {/* <Route path="/नियम एवं शर्तें" element={<Term />}/> */}
         </Routes>
       </div>
     </BrowserRouter>
