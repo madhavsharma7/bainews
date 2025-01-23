@@ -1,29 +1,169 @@
-*{
-    background-color: #242729;
-    padding: 7px;
-    margin-left: 25px;
-    color: white;
-  }
-  
-  
-  .App h1{
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 2.25rem;
-  }
-  
-  .App h2{
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  
-  .keypoint strong{
-    font-weight: bolder;
-  }
-  
-  
-  
-  
-  
-  
+* {
+  background-color: #242729;
+  padding: 7px;
+  margin-left: 25px;
+  color: white;
+}
+
+
+.App h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.App h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.keypoint strong {
+  font-weight: bolder;
+}
+
+
+body {
+
+  background-color: #242729;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  padding-top: 11vh;
+}
+
+/* Navbar Styling */
+
+.navb {
+  display: flex;
+  background-color: #161616;
+  width: 100%;
+  z-index: 10;
+  height: 11vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+/* Logo Styling */
+.log img {
+  width: 20vh;
+  margin-top: 2.5vh;
+  margin-left: 2vw;
+
+}
+
+/* Categories Section */
+.category {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.cate-icon img {
+  padding: 1.5vw;
+  height: 10vh;
+}
+
+.cate-icon img {
+  cursor: pointer;
+}
+
+.navb-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navb-item {
+  display: flex;
+  align-items: center;
+}
+
+.navb-link {
+  color: #FFFEFE;
+  text-decoration: none;
+  font-size: 2.8vh;
+  transition: color 0.3s ease;
+
+}
+
+/* Home Section */
+.house {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.houseicon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.5vw;
+}
+
+.housetext {
+  color: #FFFEFE;
+  font-size: 2.8vh;
+}
+
+
+/* Right Section Links */
+.rig-section {
+  text-align: right;
+  margin-right: 3vw;
+  margin-top: 3.8vh;
+}
+
+.rig-link {
+  color: #7b7b7b;
+  text-decoration: none;
+  font-size: 1.3vw;
+  transition: color 0.3s ease;
+
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #7b7b7b;
+  font-size: 1.3vw;
+}
+
+.con {
+  color: white;
+  margin-top: 7%;
+  padding-left: 23.5%;
+  text-align: left;
+
+}
+
+.con h3 {
+  padding-top: 2%;
+}
+
+.con p {
+  padding-top: 2%;
+}
+
+.con h2 {
+  padding-top: 2%;
+  color: white;
+
+}
+
+.supp {
+  padding-bottom: 5%;
+}
+
+#navbar-second {
+  display: none;
+}
+
+#foot {
+  display: none;
+}

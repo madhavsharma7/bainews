@@ -5,7 +5,7 @@ import Durg from "./Components/Durg/durg";
 import Bhilai from "./Components/Bhilai/bhilai"
 import Raipur from "./Components/Raipur/raipur"
 // import Niti from "./Components/Niti/Niti"
-// import Term from "./Components/Terms/Terms"
+import Term from "./Components/Terms/Terms"
 
 // Correct the path based on your project structure
 
@@ -24,8 +24,8 @@ function App() {
           <Route path="/दुर्ग" element={<Durg />} />
           <Route path="/भिलाई" element={<Bhilai />}/>
           <Route path="/रायपुर" element={<Raipur />}/>
-          {/* <Route path="/गोपनीयता नीति" element={<Niti />}/>
-          <Route path="/नियम एवं शर्तें" element={<Term />}/> */}
+          {/* <Route path="/गोपनीयता नीति" element={<Niti />}/> */}
+          <Route path="/नियम एवं शर्तें" element={<Term />}/>
         </Routes>
       </div>
     </BrowserRouter>

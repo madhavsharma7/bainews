@@ -43,13 +43,13 @@ const Nav = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+  
       <div id="main">
         {/* Navbar Section */}
-        <div className="Container">
-          <div className="navbar">
+        <div className="Contain">
+          <div className="navb">
             {/* Logo Section */}
-            <div className="logo">
+            <div className="log">
               <img
                 src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.79083e93.png&w=256&q=75"
                 alt="Logo"
@@ -57,47 +57,47 @@ const Nav = () => {
             </div>
 
             {/* Categories Section */}
-            <div className="categories">
+            <div className="category">
               {error ? (
                 <p className="error-message">Error: {error}</p>
               ) : (
-                <ul className="navbar-menu">
+                <ul className="navb-menu">
                   <a href="होम" className="home">
                     <img className="homeicon" src={homeImg} alt="Home" />
                     <p className="hometext">होम</p>
                   </a>
-                  <li className="navbar-item">
+                  <li className="navb-item">
                     <span className="category-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurg.7316a2a4.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="दुर्ग" className="navbar-link">
+                    <a href="दुर्ग" className="navb-link">
                       दुर्ग
                     </a>
                   </li>
 
-                  <li className="navbar-item">
+                  <li className="navb-item">
                     <span className="category-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhilai.79ee4325.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="भिलाई" className="navbar-link">
+                    <a href="भिलाई" className="navbr-link">
                       भिलाई
                     </a>
                   </li>
 
-                  <li className="navbar-item">
-                    <span className="category-icon">
+                  <li className="navb-item">
+                    <span className="cate-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fraipur.2c2fca26.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="रायपुर" className="navbar-link">
+                    <a href="रायपुर" className="navb-link">
                       रायपुर
                     </a>
                   </li>
@@ -106,15 +106,15 @@ const Nav = () => {
             </div>
 
             {/* Right Section Links */}
-            <div className="right-section">
+            <div className="rig-section">
               <nav>
-                <Link to="/niti" className="right-link">
+                <a className="rig-link">
                   गोपनीयता नीति
-                </Link>
+                </a>
                 <span className="separator"> | </span>
-                <Link to="/terms" className="right-link">
+                <a className="rig-link">
                   नियम एवं शर्तें
-                </Link>
+                </a>
               </nav>
             </div>
           </div>
@@ -167,7 +167,7 @@ const Nav = () => {
           <h2>11. हमसे संपर्क करे</h2>
           <p>यदि आपको इस गोपनीयता नीति या हमारे डेटा प्रथाओं के बारे में कोई प्रश्न या चिंता हो, तो कृपया हमसे संपर्क करें:<br></br></p>
 
-          <p className="support"><strong>ईमेल:</strong> support@baisahab.com</p>
+          <p className="supp"><strong>ईमेल:</strong> support@baisahab.com</p>
 
         </div>
         <div id="footer">
@@ -250,7 +250,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-    </BrowserRouter>
+   
 
 
   );

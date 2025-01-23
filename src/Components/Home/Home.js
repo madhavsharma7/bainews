@@ -242,25 +242,23 @@ const Nav = () => {
                     {/* Right Section Links */}
                     <div className="right-section">
                         <nav>
-                            <a className="right-link">
+                            {/* <a className="right-link">
                                 गोपनीयता नीति
-                            </a>
+                            </a> */}
 
-                            {/* <Link to="/गोपनीयता नीति" className="navbar-link">
+                            <Link to="/गोपनीयता नीति" className="navbar-link">
                                 गोपनीयता नीति
-                            </Link> */}
+                            </Link>
 
                             <span className="separator"> | </span>
 
-                            <a className="right-link">
+                            {/* <a className="right-link">
                                 नियम एवं शर्तें
-                            </a>
+                            </a> */}
 
-                            {/* <Link to="/नियम एवं शर्तें" className="navbar-link">
+                            <Link to="/नियम एवं शर्तें" className="navbar-link">
                                 नियम एवं शर्तें
-                            </Link> */}
-
-
+                            </Link>
 
                         </nav>
 

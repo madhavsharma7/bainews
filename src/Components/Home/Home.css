@@ -6,6 +6,9 @@
     overflow-x: hidden;
 }
 
+#main{
+    background-color: white;
+}
 .container {
     display: flex;
     flex-direction: column;

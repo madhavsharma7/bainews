@@ -43,13 +43,13 @@ const Nav = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <div id="main">
+  
+      <div id="mai">
         {/* Navbar Section */}
-        <div className="Container">
-          <div className="navbar">
+        <div className="Cont">
+          <div className="nav">
             {/* Logo Section */}
-            <div className="logo">
+            <div className="log">
               <img
                 src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.79083e93.png&w=256&q=75"
                 alt="Logo"
@@ -57,47 +57,47 @@ const Nav = () => {
             </div>
 
             {/* Categories Section */}
-            <div className="categories">
+            <div className="cate">
               {error ? (
                 <p className="error-message">Error: {error}</p>
               ) : (
-                <ul className="navbar-menu">
-                  <a href="होम" className="home">
-                    <img className="homeicon" src={home} alt="Home" />
-                    <p className="hometext">होम</p>
+                <ul className="nav-menu">
+                  <a href="होम" className="house">
+                    <img className="houseicon" src={home} alt="Home" />
+                    <p className="housetext">होम</p>
                   </a>
-                  <li className="navbar-item">
-                    <span className="category-icon">
+                  <li className="nav-item">
+                    <span className="cate-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurg.7316a2a4.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="दुर्ग" className="navbar-link">
+                    <a href="दुर्ग" className="nav-link">
                       दुर्ग
                     </a>
                   </li>
 
-                  <li className="navbar-item">
-                    <span className="category-icon">
+                  <li className="nav-item">
+                    <span className="cate-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhilai.79ee4325.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="भिलाई" className="navbar-link">
+                    <a href="भिलाई" className="nav-link">
                       भिलाई
                     </a>
                   </li>
 
-                  <li className="navbar-item">
-                    <span className="category-icon">
+                  <li className="nav-item">
+                    <span className="cate-icon">
                       <img
                         src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fraipur.2c2fca26.png&w=32&q=75"
                         alt="Category Icon"
                       />
                     </span>
-                    <a href="रायपुर" className="navbar-link">
+                    <a href="रायपुर" className="nav-link">
                       रायपुर
                     </a>
                   </li>
@@ -106,15 +106,15 @@ const Nav = () => {
             </div>
 
             {/* Right Section Links */}
-            <div className="right-section">
+            <div className="rig-section">
               <nav>
-                <Link to="/niti" className="right-link">
+                <a className="rig-link">
                   गोपनीयता नीति
-                </Link>
+                </a>
                 <span className="separator"> | </span>
-                <Link to="/terms" className="right-link">
+                <a className="rig-link">
                   नियम एवं शर्तें
-                </Link>
+                </a>
               </nav>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Nav = () => {
 
         {/* Content Section */}
 
-        <div className="content">
+        <div className="con">
           <h1>बाईसाहब के लिए नियम एवं शर्तें</h1>
           <p>बाईसाहब में आपका स्वागत है! हमारी वेबसाइट का उपयोग या उस तक पहुँच कर, आप निम्नलिखित नियमों और शर्तों का पालन करने और उनसे <br></br> बंधे रहने के लिए सहमत होते हैं। कृपया इस साइट का उपयोग करने से पहले इन शर्तों को ध्यानपूर्वक पढ़ें। यदि आप इनमें से किसी भी शर्त <br></br> से असहमत हैं, तो कृपया हमारी वेबसाइट का उपयोग करने से बचें।</p>
 
@@ -159,31 +159,31 @@ const Nav = () => {
           <p>इन नियमों और शर्तों पर भारत के कानूनों का पालन होगा। आपकी वेबसाइट के उपयोग से उत्पन्न होने वाले किसी भी विवाद का निपटारा [आपके क्षेत्राधिकार]  <br></br>के न्यायालयों की विशेष अधिकारिता के अधीन होगा।</p>
 
           <h2>10. संपर्क करें</h2>
-          <p className="support">यदि आपको इन नियमों और शर्तों के बारे में कोई प्रश्न हो, तो कृपया हमसे support@baisahab.com पर संपर्क करें।</p>
+          <p className="sup">यदि आपको इन नियमों और शर्तों के बारे में कोई प्रश्न हो, तो कृपया हमसे support@baisahab.com पर संपर्क करें।</p>
         </div>
 
-        <div id="footer">
-          <div class="footer-content">
-            <div className="footer-logo">
+        <div id="foot">
+          <div class="foot-content">
+            <div className="foot-logo">
               <img
                 src="https://baisahab.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.79083e93.png&w=256&q=75"
                 alt="Logo"
               />
             </div>
           </div>
-          <div className="right-section-footer">
-            <div className="grid-container">
-              <a className="right-link-footer">
+          <div className="rig-section-footer">
+            <div className="grid-cont">
+              <a className="rig-link-footer">
                 गोपनीयता नीति
               </a>
               <p> हमसे संपर्क करे </p>
-              <a className="right-link-footer">
+              <a className="rig-link-footer">
                 नियम एवं शर्तें
               </a>
-              <p className="email"> support@baisahab.com </p>
+              <p className="mail"> support@baisahab.com </p>
             </div>
 
-            <p className="application-link"> ऐप डाउनलोड करें </p>
+            <p className="app-link"> ऐप डाउनलोड करें </p>
           </div>
 
           <div className="link">
@@ -241,12 +241,9 @@ const Nav = () => {
             </div>
           </div>
         </div>
-
-
       </div>
 
-
-    </BrowserRouter>
+  
   );
 }
 

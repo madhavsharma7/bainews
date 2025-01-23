@@ -12,7 +12,7 @@ body {
     background-color: #242729;
 }
 
-.container {
+.cont {
     display: flex;
     flex-direction: column;
     padding-top: 11vh;
@@ -20,7 +20,7 @@ body {
 
 /* Navbar Styling */
 
-.navbar {
+.nav {
     display: flex;
     background-color: #161616;
     width: 100%;
@@ -33,7 +33,7 @@ body {
 }
 
 /* Logo Styling */
-.logo img {
+.log img {
     width: 20vh;
     margin-top: 2.5vh;
     margin-left: 2vw;
@@ -41,34 +41,34 @@ body {
 }
 
 /* Categories Section */
-.categories {
+.cate {
     display: flex;
     justify-content: center;
     flex-grow: 1;
 }
 
-.category-icon img {
+.cate-icon img {
     padding: 1.5vw;
     height: 10vh;
 }
 
-.category-icon img {
+.cate-icon img {
     cursor: pointer;
 }
 
-.navbar-menu {
+.nav-menu {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navbar-item {
+.nav-item {
     display: flex;
     align-items: center;
 }
 
-.navbar-link {
+.nav-link {
     color: #FFFEFE;
     text-decoration: none;
     font-size: 2.8vh;
@@ -77,7 +77,7 @@ body {
 }
 
 /* Home Section */
-.home {
+.house {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -85,26 +85,26 @@ body {
     margin: 10px;
 }
 
-.homeicon {
+.houseicon {
     width: 24px;
     height: 24px;
     margin-right: 1.5vw;
 }
 
-.hometext {
+.housetext {
     color: #FFFEFE;
     font-size: 2.8vh;
 }
 
 
 /* Right Section Links */
-.right-section {
+.rig-section {
     text-align: right;
     margin-right: 3vw;
     margin-top: 3.8vh;
 }
 
-.right-link {
+.rig-link {
     color: #7b7b7b;
     text-decoration: none;
     font-size: 1.3vw;
@@ -118,7 +118,7 @@ body {
     font-size: 1.3vw;
 }
 
-.content {
+.con {
     color: white;
     margin-top: 7%;
     padding-left: 23.5%;
@@ -126,20 +126,29 @@ body {
 
 }
 
-.content h3 {
+.con h3 {
     padding-top: 2%;
 }
 
-.content p {
+.con p {
     padding-top: 2%;
 }
 
-.content h2 {
+.con h2 {
     padding-top: 2%;
     color: white;
 
 }
 
-.support{
+.sup{
     padding-bottom: 5%;
 }
+
+#navbar-second {
+    display: none;
+}
+
+#foot {
+    display: none;
+}
+
